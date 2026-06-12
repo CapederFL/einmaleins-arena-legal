@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Datenschutzerklärung — Einmaleins Arena</title>
+<style>
+  :root { color-scheme: light dark; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 720px; margin: 0 auto; padding: 24px; line-height: 1.6; color: #1a1a1a; background: #fafafa; }
+  @media (prefers-color-scheme: dark) { body { color: #e5e5e5; background: #0f0f11; } a { color: #38bdf8; } }
+  h1 { font-size: 1.8em; margin-bottom: 8px; }
+  h2 { font-size: 1.3em; margin-top: 32px; border-bottom: 1px solid #ddd; padding-bottom: 6px; }
+  @media (prefers-color-scheme: dark) { h2 { border-bottom-color: #333; } }
+  .meta { color: #666; font-size: 0.9em; margin-bottom: 24px; }
+  ul { padding-left: 22px; }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.95em; }
+  th, td { text-align: left; padding: 8px; border-bottom: 1px solid #ddd; vertical-align: top; }
+  @media (prefers-color-scheme: dark) { th, td { border-bottom-color: #333; } }
+  th { font-weight: 600; }
+  a { color: #0284c7; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #ddd; font-size: 0.85em; color: #888; }
+  @media (prefers-color-scheme: dark) { footer { border-top-color: #333; } }
+</style>
+</head>
+<body>
+
+<h1>Datenschutzerklärung</h1>
+<p class="meta">Stand: 11. Juni 2026 · App: Einmaleins Arena (iOS)</p>
+
+<h2>1. Verantwortlicher</h2>
+<p>
+  Pascal Capeder<br>
+  Liechtenstein<br>
+  E-Mail: <a href="mailto:capederpas@gmail.com">capederpas@gmail.com</a>
+</p>
+
+<h2>2. Was diese App tut</h2>
+<p>
+  Einmaleins Arena ist eine Lern-App für das kleine Einmaleins, gedacht für Kinder im
+  Grundschulalter. Der Lernbereich (Lektionen, adaptives Üben, Übungs-Duelle gegen
+  computergesteuerte Gegner, Prüfungen, Geteilt-Training) funktioniert <strong>vollständig
+  offline und ganz ohne Account</strong>. Zusätzlich gibt es ein optionales
+  <strong>Online-Duell gegen andere Kinder</strong>, das nur mit Einwilligung eines
+  Elternteils und einem aktiven Abo erreichbar ist. Die App enthält
+  <strong>keine Werbung</strong>, kein Tracking und keine Werbe-Identifier (kein IDFA).
+</p>
+
+<h2>3. Daten im Offline-Lernbereich</h2>
+<table>
+  <thead>
+    <tr><th>Datenkategorie</th><th>Zweck</th><th>Wo</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Selbstgewählter Spitzname (ein Fantasiename, kein echter Name)</td>
+      <td>Personalisierung der Anrede</td>
+      <td>Nur lokal auf dem Gerät</td>
+    </tr>
+    <tr>
+      <td>Lernfortschritt, gemeisterte Aufgaben, Statistiken, Einstellungen</td>
+      <td>Kernfunktion der Lern-App</td>
+      <td>Nur lokal auf dem Gerät</td>
+    </tr>
+    <tr>
+      <td>Freischalt-/Kauf-Status</td>
+      <td>Freischaltung gekaufter Inhalte</td>
+      <td>Apple StoreKit + RevenueCat (siehe Punkt 6), lokaler Cache</td>
+    </tr>
+  </tbody>
+</table>
+<p>
+  <strong>Solange nur offline gelernt wird, sendet die App keine personenbezogenen Daten an
+  Server und legt keinen Account an.</strong> Es kommt kein Werbe- oder Tracking-SDK zum Einsatz.
+</p>
+
+<h2>4. Online-Duell (optional, nur mit Eltern-Einwilligung)</h2>
+<p>
+  Wird das Online-Duell genutzt, sind zur Durchführung des Spiels folgende Daten nötig:
+</p>
+<table>
+  <thead>
+    <tr><th>Datenkategorie</th><th>Zweck</th><th>Wo</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Anonyme Spiel-Kennung (zufällige ID, kein Name, keine E-Mail des Kindes)</td>
+      <td>Pseudonyme Anmeldung am Spielserver</td>
+      <td>Supabase (EU-Region, Frankfurt)</td>
+    </tr>
+    <tr>
+      <td>Spielprofil: Spitzname (Pseudonym) und Alter (optionale Angabe)</td>
+      <td>Pseudonymes Spielprofil für die Teilnahme am Online-Duell</td>
+      <td>Supabase (EU)</td>
+    </tr>
+    <tr>
+      <td>Duell-Daten: gestellte Aufgaben, Antworten, Ergebnisse, Spielstärke (Rang)</td>
+      <td>Abwickeln der Duelle; gepaart wird anhand der Spielstärke</td>
+      <td>Supabase (EU)</td>
+    </tr>
+  </tbody>
+</table>
+<p>
+  Gegenspieler sehen <strong>niemals den Spitznamen</strong>, sondern nur eine neutrale
+  Bezeichnung samt Spielstärke (z. B. „Gegner · Bronze"). Es findet kein Chat und kein
+  Austausch persönlicher Daten zwischen den Kindern statt.
+</p>
+
+<h2>5. Eltern-Einwilligung (DSGVO Art. 8)</h2>
+<p>
+  Bevor ein Kind online spielen kann, holen wir die Einwilligung eines Elternteils bzw.
+  Erziehungsberechtigten ein. Dazu wird einmalig dessen <strong>E-Mail-Adresse</strong>
+  erfasst, um einen Bestätigungs-Link zu versenden; nach dem Bestätigen wird die Einwilligung
+  serverseitig vermerkt. Die E-Mail-Adresse des Elternteils wird <strong>ausschließlich</strong>
+  zu diesem Zweck verwendet, nicht für Werbung weitergegeben und kann auf Anfrage gelöscht
+  werden. Der Versand des Bestätigungs-Links erfolgt über einen E-Mail-Zustelldienst.
+</p>
+
+<h2>6. In-App-Käufe und Abo</h2>
+<p>
+  Käufe (einmalige Freischaltung) und das Wochen-Abo für das Online-Duell werden über den
+  Apple App Store / StoreKit abgewickelt; Apple ist dabei eigenständig Verantwortlicher für
+  die Zahlungsabwicklung. Zur Verwaltung des Abo- und Freischalt-Status setzen wir
+  <strong>RevenueCat</strong> ein. RevenueCat verarbeitet den Kauf-/Abostatus, verknüpft mit
+  einer <strong>anonymen Nutzer-Kennung</strong> (kein Klarname). Mehr dazu in den
+  Datenschutzhinweisen von
+  <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple</a> und
+  <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat</a>.
+</p>
+
+<h2>7. KI-generierte Inhalte</h2>
+<p>
+  Ein Teil der Sprachausgabe wurde zur Entwicklungszeit mit Hilfe eines generativen
+  KI-Sprachdienstes (ElevenLabs) erzeugt. Sämtliche dieser Audio-Inhalte sind im App-Bundle
+  vorgeneriert enthalten; während der Nutzung werden <strong>keine</strong> Daten an
+  ElevenLabs übertragen.
+</p>
+
+<h2>8. Fehlerberichte</h2>
+<p>
+  Ein optionales Absturz-Berichtssystem (Sentry) ist bewusst datensparsam konfiguriert
+  (keine personenbezogenen Daten, <code>sendDefaultPii=false</code>) und nur aktiv, sofern
+  überhaupt aktiviert. Es dient ausschließlich der technischen Stabilität.
+</p>
+
+<h2>9. Eingesetzte Dienste / Empfänger</h2>
+<table>
+  <thead>
+    <tr><th>Dienst</th><th>Zweck</th><th>Region</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Apple App Store / StoreKit</td><td>Zahlungsabwicklung der Käufe</td><td>gemäss Apple</td></tr>
+    <tr><td>RevenueCat</td><td>Abo-/Freischalt-Verwaltung</td><td>USA</td></tr>
+    <tr><td>Supabase</td><td>Datenbank &amp; pseudonyme Anmeldung fürs Online-Duell</td><td>EU (Frankfurt)</td></tr>
+    <tr><td>E-Mail-Zustelldienst</td><td>Versand der Eltern-Bestätigungs-Mail</td><td>—</td></tr>
+    <tr><td>ElevenLabs</td><td>nur zur Entwicklungszeit (Audio-Erzeugung)</td><td>—</td></tr>
+  </tbody>
+</table>
+
+<h2>10. Rechtsgrundlage</h2>
+<ul>
+  <li><strong>Lokaler Lernbereich:</strong> Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung).</li>
+  <li><strong>Online-Duell:</strong> Einwilligung der Eltern nach Art. 6 Abs. 1 lit. a i. V. m. Art. 8 DSGVO.</li>
+  <li><strong>In-App-Käufe:</strong> Art. 6 Abs. 1 lit. b DSGVO; Apple eigenständig verantwortlich.</li>
+</ul>
+
+<h2>11. Speicherdauer</h2>
+<ul>
+  <li><strong>Lokale Daten:</strong> bleiben auf dem Gerät, bis die App deinstalliert wird.</li>
+  <li><strong>Online-Profil &amp; Duell-Daten:</strong> bis zur Löschung auf Anfrage.</li>
+  <li><strong>Eltern-E-Mail &amp; Einwilligung:</strong> bis zum Widerruf der Einwilligung.</li>
+</ul>
+
+<h2>12. Eure Rechte</h2>
+<ul>
+  <li><strong>Auskunft / Datenkopie:</strong> auf Anfrage per E-Mail.</li>
+  <li><strong>Löschung:</strong> lokale Daten durch Deinstallation der App; Online-Daten auf Anfrage per E-Mail.</li>
+  <li><strong>Widerruf der Einwilligung:</strong> Eltern können die Einwilligung zum Online-Spiel jederzeit per E-Mail widerrufen.</li>
+  <li><strong>Beschwerderecht:</strong> Datenschutzstelle des Fürstentums Liechtenstein (<a href="https://www.datenschutzstelle.li/" target="_blank" rel="noopener">datenschutzstelle.li</a>).</li>
+  <li><strong>Kontakt:</strong> <a href="mailto:capederpas@gmail.com">capederpas@gmail.com</a></li>
+</ul>
+
+<h2>13. Push-Benachrichtigungen</h2>
+<p>
+  Etwaige Erinnerungen werden ausschließlich lokal auf dem Gerät erzeugt (kein Versand über
+  Server) und nur mit ausdrücklicher Zustimmung im iOS-Berechtigungsdialog aktiviert.
+</p>
+
+<h2>14. Änderungen dieser Erklärung</h2>
+<p>
+  Diese Erklärung kann angepasst werden, wenn neue Funktionen oder rechtliche Anforderungen
+  das erfordern. Die jeweils aktuelle Version findest du unter
+  <a href="https://capederfl.github.io/einmaleins-arena-legal/privacy.html">capederfl.github.io/einmaleins-arena-legal/privacy.html</a>.
+</p>
+
+<footer>
+  <p>← <a href="index.html">Zurück zur Übersicht</a></p>
+</footer>
+
+</body>
+</html>
